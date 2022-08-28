@@ -1,4 +1,4 @@
-import { Character } from "../types";
+import { ICharacter } from "../types";
 
 export interface ResponseSearch {
   count: number;
