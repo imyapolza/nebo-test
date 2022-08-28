@@ -4,5 +4,5 @@ export interface ResponseSearch {
   count: number;
   next: string | null;
   previous: string | null;
-  results: Array<Character>;
+  results: Array<ICharacter>;
 }
