@@ -1,0 +1,36 @@
+@use "../MainInformation/MainInformation.module.scss";
+
+.wrapper {
+    margin-bottom: 30px;
+    width: 350px;
+
+    @include MainInformation.wrapper;
+}
+
+.header {
+    color: rgb(0, 174, 255);
+}
+
+.show__btn {
+    color: red;
+    cursor: pointer;
+    font-family: Rubik Dirt, BlinkMacSystemFont;
+}
+
+.opening {
+    &__text {
+        width: 204px;
+    }
+}
+
+.list {
+    &__item {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 435px) {
+    .list {
+        width: 100%;
+    }
+}

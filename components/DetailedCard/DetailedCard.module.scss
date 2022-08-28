@@ -1,0 +1,30 @@
+.films {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vehicles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 23px;
+        color: brown;
+        margin-bottom: 20px;
+        width: 140px;
+    }
+}
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.loading__text {
+    text-align: center;
+}

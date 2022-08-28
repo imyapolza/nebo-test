@@ -1,0 +1,60 @@
+$base-color: rgb(0, 174, 255);
+
+.pagination {
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+.pageNumber {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.button {
+    font-family: Rubik Dirt, BlinkMacSystemFont;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active {
+    background: $base-color;
+    border-radius: 30px;
+}
+
+.prev {
+    color: $base-color;
+}
+.next {
+    color: $base-color;
+}
+
+@media (max-width: 700px) {
+    .pagination {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .prev,
+    .next {
+        display: none;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+}

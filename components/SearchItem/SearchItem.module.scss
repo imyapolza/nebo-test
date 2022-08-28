@@ -1,0 +1,23 @@
+.wrapper {
+    padding: 10px 30px;
+    height: 39px;
+    margin: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+@media (max-width: 435px) {
+    .wrapper {
+        font-size: 13px;
+    }
+}
+
+

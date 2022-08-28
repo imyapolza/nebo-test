@@ -1,0 +1,36 @@
+@mixin wrapper {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    padding: 25px;
+    cursor: pointer;
+    font-family: Rubik Dirt, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__wrapper {
+        @include wrapper;
+    }
+}
+
+.name {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .property {
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        justify-content: flex-start;
+    }
+}

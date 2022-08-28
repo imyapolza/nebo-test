@@ -1,0 +1,28 @@
+.header {
+    color: rgb(0, 174, 255);
+}
+
+.wrapper {
+    width: 300px;
+    margin-bottom: 30px;
+    width: 350px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    padding: 25px;
+    cursor: pointer;
+    font-family: Rubik Dirt, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+
+.list {
+    &__item {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 435px) {
+    .list {
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 40px;
+}
+
+.viewed {
+    margin-top: 20px;
+    color: rgb(0, 174, 255);
+}
+
+@media (max-width: 1255px) {
+    .characters {
+        justify-content: center;
+    }
+
+    .pagination {
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pagination {
+        flex-wrap: wrap;
+        margin: 30px 20px;
+    }
+}
